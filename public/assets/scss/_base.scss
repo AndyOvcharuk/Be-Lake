@@ -7,3 +7,8 @@
 body {
   font-family: "Myriad Pro";
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
