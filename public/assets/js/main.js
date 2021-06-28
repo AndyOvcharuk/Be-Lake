@@ -6,8 +6,8 @@ async function getLakes () {
 
 function createCard (lake) {
   const card = document.createElement('div')
-  card.innerHTML = `<div class="card">
-  <div class="card__img">
+  card.classList.add('card')
+  card.innerHTML = `<div class="card__img">
     <img src="/assets/img/${lake.filename}" alt="${lake.name}" />
   </div>
   <div class="card__content">
@@ -41,8 +41,7 @@ function createCard (lake) {
     </div>
     <div class="card__text">
       ${lake.short_description}
-    </div>
-  </div>`
+    </div>`
 
   const cards = document.querySelector('.cards')
   cards.append(card)
