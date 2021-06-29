@@ -1,10 +1,10 @@
-async function getLakes() {
+async function getLakes () {
   const res = await fetch('/api/lake/all')
   const lakes = await res.json()
-  lakes.forEach((lake) => createCard(lake))
+  lakes.forEach(lake => createCard(lake))
 }
 
-function createCard(lake) {
+function createCard (lake) {
   const card = document.createElement('div')
   card.classList.add('card')
   card.innerHTML = `<div class="card__img">
