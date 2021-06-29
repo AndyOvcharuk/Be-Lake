@@ -11,6 +11,4 @@ app.use('/api/lake', router)
 
 router.get('/all', lake.readAll)
 
-app.listen(8080, () =>
-  console.log('Server running at port http://localhost:8080')
-)
+app.listen(process.env.PORT || 8080, () => console.log('Server running'))
