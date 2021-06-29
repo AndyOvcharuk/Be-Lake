@@ -30,8 +30,28 @@ body {
 }
 .hero .logo {
   object-fit: contain;
+  position: relative;
   width: 20vw;
   height: 100%;
+}
+.hero .myfavbtn {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.hero .myfavourites {
+  display: flex;
+  object-fit: contain;
+  justify-content: flex-end;
+  font-size: ms(2);
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  color: #df0909;
+  margin: 1rem;
 }
 
 .card {
@@ -93,6 +113,85 @@ body {
 }
 .card__text {
   font-size: 0.8rem;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.favbox {
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  position: relative;
+}
+
+.fav-btn {
+  display: flex;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  padding: 0.5rem;
+}
+
+.favheader {
+  display: flex;
+  justify-content: space-between;
+}
+
+@keyframes favme-anime {
+  0% {
+    opacity: 1;
+    font-size: ms(0);
+    -webkit-text-stroke-color: transparent;
+  }
+  25% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: ms(-2);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #df0909;
+  }
+  75% {
+    opacity: 0.6;
+    color: #fff;
+    font-size: ms(3);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #df0909;
+  }
+  100% {
+    opacity: 1;
+    font-size: ms(2);
+    -webkit-text-stroke-color: transparent;
+  }
+}
+@keyframes favme-hover {
+  from {
+    font-size: ms(3);
+  }
+  80% {
+    font-size: ms(2);
+  }
+}
+.favme {
+  display: block;
+  font-size: ms(2);
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.2s ease;
+  color: #cbcdce;
+  margin: 0;
+}
+.favme.active {
+  color: #df0909;
+}
+.favme:hover {
+  animation: favme-hover 0.3s infinite alternate;
+}
+.favme.is_animating {
+  animation: favme-anime 0.3s;
 }
 
 /*# sourceMappingURL=main.css.map */
