@@ -1,12 +1,12 @@
 async function getLakes() {
-  const res = await fetch("/api/lake/all");
-  const lakes = await res.json();
-  lakes.forEach((lake) => createCard(lake));
+  const res = await fetch('/api/lake/all')
+  const lakes = await res.json()
+  lakes.forEach((lake) => createCard(lake))
 }
 
 function createCard(lake) {
-  const card = document.createElement("div");
-  card.classList.add("card");
+  const card = document.createElement('div')
+  card.classList.add('card')
   card.innerHTML = `<div class="card__img">
     <img src="/assets/img/${lake.filename}" alt="${lake.name}" />
   </div>
@@ -41,10 +41,10 @@ function createCard(lake) {
     </div>
     <div class="card__text">
       ${lake.short_description}
-    </div>`;
+    </div>`
 
-  const cards = document.querySelector(".cards");
-  cards.append(card);
+  const cards = document.querySelector('.cards')
+  cards.append(card)
 }
 
-getLakes();
+getLakes()
