@@ -11,6 +11,16 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  margin: auto;
+}
+@media (min-width: 640px) {
+  .container {
+    width: 80%;
+  }
 }
 
 @font-face {
@@ -26,32 +36,13 @@ body {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
 }
 .hero .logo {
   object-fit: contain;
   position: relative;
-  width: 20vw;
+  width: 30vw;
   height: 100%;
-}
-.hero .myfavbtn {
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.hero .myfavourites {
-  display: flex;
-  object-fit: contain;
-  justify-content: flex-end;
-  font-size: ms(2);
-  width: auto;
-  height: auto;
-  cursor: pointer;
-  box-shadow: none;
-  transition: all 0.2s ease;
-  color: #df0909;
-  margin: 1rem;
 }
 
 .card {
@@ -62,7 +53,7 @@ body {
 @media (min-width: 640px) {
   .card {
     flex-direction: column;
-    width: 20%;
+    width: 30%;
   }
 }
 .card__title {
@@ -192,6 +183,24 @@ body {
 }
 .favme.is_animating {
   animation: favme-anime 0.3s;
+}
+
+.myfavbtn {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+@media (min-width: 640px) {
+  .myfavbtn {
+    right: 10%;
+  }
+}
+
+.myfavourites {
+  width: 1rem;
+  cursor: pointer;
+  color: #df0909;
+  margin: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

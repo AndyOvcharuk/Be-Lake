@@ -1,0 +1,17 @@
+@use '../variables' as *;
+
+.myfavbtn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    @media (min-width: $sm) {
+    right: 10%;
+  }
+  }
+
+  .myfavourites {
+    width: 1rem;
+    cursor: pointer;
+    color: #df0909;
+    margin: 1rem;
+  }

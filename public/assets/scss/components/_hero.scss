@@ -1,35 +1,17 @@
+@use '../variables' as *;
+
 .hero {
   display: flex;
   justify-content: center;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 20vh;
+  height: 30vh;
 
   .logo {
     object-fit: contain;
     position: relative;
-    width: 20vw;
+    width: 30vw;
     height: 100%;
-  }
-  .myfavbtn {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .myfavourites {
-    display: flex;
-    object-fit: contain;
-    justify-content: flex-end;
-    font-size: ms(2);
-    width: auto;
-    height: auto;
-    cursor: pointer;
-    box-shadow: none;
-    transition: all 0.2s ease;
-    color: #df0909;
-    margin: 1rem;
   }
 }
