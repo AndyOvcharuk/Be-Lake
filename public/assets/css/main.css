@@ -186,15 +186,19 @@ body {
 }
 
 .myfavbtn {
-  object-fit: contain;
-  position: relative;
-  height: 100%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+}
+@media (min-width: 640px) {
+  .myfavbtn {
+    right: 10%;
+  }
 }
 
 .myfavourites {
   width: 1rem;
   cursor: pointer;
-  box-shadow: none;
   color: #df0909;
   margin: 1rem;
 }
