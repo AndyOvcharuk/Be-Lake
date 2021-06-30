@@ -59,6 +59,13 @@ body {
 .card__title {
   font-size: 1.2rem;
 }
+.card__addmyfav {
+  position: absolute;
+  width: 1rem;
+  cursor: pointer;
+  color: #b6b4b4;
+  margin: 0.5rem;
+}
 .card__img {
   display: block;
   flex: 1 1 0;

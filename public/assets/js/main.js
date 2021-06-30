@@ -8,6 +8,7 @@ function createCard (lake) {
   const card = document.createElement('div')
   card.classList.add('card')
   card.innerHTML = `<div class="card__img">
+    <span class="card__addmyfav dashicons dashicons-heart"></span>
     <img src="/assets/img/${lake.filename}" alt="${lake.name}" />
   </div>
   <div class="card__content">
