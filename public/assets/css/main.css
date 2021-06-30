@@ -113,8 +113,18 @@ body {
   font-size: 0.8rem;
 }
 
+#myfavtitle {
+  margin: 2em 1em;
+  display: flex;
+  align-items: center;
+}
+
 .close {
+  margin: 2em 1em;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  font-size: 1.5em;
 }
 
 .favbox {
