@@ -1,0 +1,21 @@
+.myfavbtn {
+    object-fit: contain;
+    position: relative;
+    // display: flex;
+    height: 100%;
+    // margin-left: 30%;
+    // justify-content: space-between;
+    // align-items: flex-start;
+  }
+
+  .myfavourites {
+    // display: flex;
+    // object-fit: contain;
+    // justify-content: flex-end;
+    width: 1rem;
+    cursor: pointer;
+    box-shadow: none;
+    // transition: all 0.2s ease;
+    color: #df0909;
+    margin: 1rem;
+  }
