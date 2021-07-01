@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,35 @@
 }
 
 body {
-  font-family: "Myriad Pro";
+  font-family: 'Myriad Pro';
+}
+
+a {
+  text-decoration: none;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  margin: auto;
+  @media (min-width: $sm) {
+    width: 80%;
+  }
+}
+
+main {
+	margin-top: 64%;
+    @media (min-width: $sm) {
+  	margin-top: 54%;
+  }
+    @media (min-width: $md) {
+  	margin-top: 48%;
+  }
+      @media (min-width: $lg) {
+  	margin-top: 40%;
+  }
 }

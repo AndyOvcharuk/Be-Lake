@@ -8,6 +8,7 @@ function createCard (lake) {
   const card = document.createElement('div')
   card.classList.add('card')
   card.innerHTML = `<div class="card__img">
+    <span class="card__addmyfav dashicons dashicons-heart"></span>
     <img src="/assets/img/${lake.filename}" alt="${lake.name}" />
   </div>
   <div class="card__content">
@@ -48,3 +49,15 @@ function createCard (lake) {
 }
 
 getLakes()
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector('.header-box').classList.add('smaller');
+    document.querySelector('.logo').style.width = '10vw';
+  } else {
+    document.querySelector('.header-box').classList.remove("smaller");
+    document.querySelector('.logo').style.width = '20vw';
+  }
+}

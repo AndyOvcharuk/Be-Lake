@@ -7,13 +7,19 @@
 
   @media (min-width: $sm) {
     flex-direction: column;
-    width: 20%;
+    width: 30%;
   }
 
   &__title {
     font-size: 1.2rem;
   }
-
+  &__addmyfav {
+    position: absolute;
+    width: 1rem;
+    cursor: pointer;
+    color: rgb(182, 180, 180);
+    margin: 0.5rem;
+  }
   &__img {
     display: block;
     flex: 1 1 0;
