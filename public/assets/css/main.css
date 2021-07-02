@@ -78,16 +78,12 @@ header {
   object-fit: contain;
   position: relative;
   width: 20vw;
-  height: 80%;
+  height: 100%;
   transition: 0.5s;
 }
 
 .smaller {
   padding: 0.5em;
-}
-
-.and {
-  font-size: 80px;
 }
 
 .card {
