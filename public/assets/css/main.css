@@ -8,6 +8,10 @@ body {
   font-family: "Myriad Pro";
 }
 
+a {
+  text-decoration: none;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +27,25 @@ body {
   }
 }
 
+main {
+  margin-top: 64%;
+}
+@media (min-width: 640px) {
+  main {
+    margin-top: 54%;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    margin-top: 48%;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    margin-top: 40%;
+  }
+}
+
 @font-face {
   font-family: "Myriad Pro";
   src: url("../fonts/myriadpro-regular.otf") format("otf");
@@ -30,19 +53,37 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-.hero {
-  display: flex;
-  justify-content: center;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30vh;
+  color: white;
+  z-index: 1000;
+  overflow: hidden;
+  transition: height 0.5s;
 }
-.hero .logo {
+
+.header-box {
+  width: 100%;
+  margin: auto;
+  padding: 6rem;
+  text-align: center;
+  transition: padding 0.3s;
+}
+
+.logo {
   object-fit: contain;
   position: relative;
-  width: 30vw;
+  width: 20vw;
   height: 100%;
+  transition: 0.5s;
+}
+
+.smaller {
+  padding: 0.5em;
 }
 
 .card {

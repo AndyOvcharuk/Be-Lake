@@ -49,3 +49,18 @@ function createCard (lake) {
 }
 
 getLakes()
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  const headerBox = document.querySelector('.header-box')
+  const logoShrink = document.querySelector('.logo')
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    headerBox.classList.add('smaller');
+    logoShrink.style.width = '10vw';
+  } else {
+    headerBox.classList.remove("smaller");
+    logoShrink.style.width = '20vw';
+  }
+}

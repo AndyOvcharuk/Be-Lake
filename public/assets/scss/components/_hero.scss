@@ -1,17 +1,34 @@
 @use '../variables' as *;
 
-.hero {
-  display: flex;
-  justify-content: center;
-  background-image: url("../img/hero.jpg");
-  background-size: cover;
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  // height: 50vh;
+	background-image: url('../img/hero.jpg');
+	background-size: cover;
   background-repeat: no-repeat;
-  height: 30vh;
+	color: rgb(255, 255, 255);
+	z-index: 1000;
+	overflow: hidden;
+	transition: height 0.5s;
+}
 
-  .logo {
-    object-fit: contain;
-    position: relative;
-    width: 30vw;
-    height: 100%;
+.header-box {
+	width: 100%;
+	margin: auto;
+	padding: 6rem;
+	text-align: center;
+	transition: padding 0.3s;
+}
+
+.logo {
+  object-fit: contain;
+  position: relative;
+  width: 20vw;
+  height: 100%;
+  transition: 0.5s;
   }
+.smaller {
+	padding: 0.5em;
 }
